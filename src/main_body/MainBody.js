@@ -12,7 +12,7 @@ import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import CircleIcon from '@mui/icons-material/Circle';
 
 export default function MainBody() {
-  const [selectedListItem, setSelectedListItem] = useState('');
+  const [selectedListItem, setSelectedListItem] = useState('Lorem Ipsum');
 
   const handleListItemClick = (item) => {
     setSelectedListItem(item);

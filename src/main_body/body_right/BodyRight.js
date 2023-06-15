@@ -17,7 +17,7 @@ const bull = (
 
 export default function BodyRight(props) {
   const [listName, setListName] = useState(props.selectedListItem);
-  const [ans,setAnswer] = useState('lorem ipsum smith jam');
+  // const [ans,setAnswer] = useState('lorem ipsum smith jam');
 
   // Update the component whenever the prop value changes
   React.useEffect(() => {
@@ -34,7 +34,7 @@ export default function BodyRight(props) {
         </Typography>
 
         <Typography variant="body2" sx={{mt:4}}>
-            {ans}
+            {listName}
         </Typography>
       </CardContent>
       <CardActions>

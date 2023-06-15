@@ -21,7 +21,7 @@ export default function FooterLeft() {
           width: '40%',
           height: '300px', // Adjust the desired height here
         },
-        minHeight: '70vh',
+        minHeight: '55vh',
         border: 'none', // Set border to 'none'
         outline:'none',
         boxShadow:'none',
@@ -33,7 +33,7 @@ export default function FooterLeft() {
                 border: 'none', // Set border to 'none'
                 outline:'none',
                 boxShadow:'none',
-                transform: 'translate(150px, 0px)',
+                transform: 'translate(125px, 0px)',
                 }}
         >
             <Stack sx={{mt:6,ml:8}}>
