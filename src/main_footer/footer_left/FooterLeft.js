@@ -56,9 +56,9 @@ export default function FooterLeft() {
                 </Typography>
                 </Stack>
 
-            <Divider sx={{ borderWidth: '2px', width:'175%' }}/>
+            <Divider sx={{ borderWidth: '2px', width:'170%' }}/>
             <Typography variant="h6" gutterBottom sx={{whiteSpace:'nowrap',color:'#757f6a'}}>
-                Home Grown Props, Inc
+                Home Grown Pros, Inc
             </Typography>
             </Box>
             </Stack>

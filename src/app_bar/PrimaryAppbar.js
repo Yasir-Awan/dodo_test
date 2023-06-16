@@ -88,11 +88,22 @@ export default function PrimaryAppBar() {
               noWrap
               component="div"
               sx={{
-                flexGrow: 1,
-                display: { xs: 'none', sm: 'block', marginTop: '-25px' },
+                // flexGrow: 1,
+                display: { xs: 'none', sm: 'block', marginTop: '-25px',color:'#fff',fontWeight:'bold',fontSize:'2em', },
               }}
             >
-              HGP
+              H
+            </Typography>
+            <Typography
+              variant="h6"
+              noWrap
+              component="div"
+              sx={{
+                flexGrow: 100,
+                display: { xs: 'none', sm: 'block', marginTop: '-25px',color:'#87be2a',fontWeight:'bold',fontSize:'2em' },
+              }}
+            >
+              GP
             </Typography>
             {/* <Divider orientation="vertical" variant="middle" flexItem sx={{ml:-8,height:36, mt:1,mb:1}}/> */}
             <Search sx={{ mt: -3.5 ,marginLeft:'30%',marginRight:'30%'}}>

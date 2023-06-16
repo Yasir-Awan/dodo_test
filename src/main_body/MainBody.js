@@ -93,11 +93,16 @@ export default function MainBody() {
                   onClick={() => handleListItemClick('What is a Payment Gateway?')}
                   data-keyboard-focus-index="0"
                   data-item="What is a Payment Gateway?"
-                  tabIndex={1}
+                  tabIndex={0}
                 >
                   <ListItemButton>
                     <ListItemIcon>
-                      <CircleIcon sx={{ color: '#87be2a' }} />
+                      <CircleIcon
+                        sx={{
+                          color:
+                            selectedListItem === 'What is a Payment Gateway?' ? 'green' : '#87be2a',
+                        }}
+                      />
                     </ListItemIcon>
                     <ListItemText primary="What is a Payment Gateway?" />
                   </ListItemButton>
@@ -119,11 +124,19 @@ export default function MainBody() {
                   }
                   data-keyboard-focus-index="1"
                   data-item="Do I need to pay to instapay when there is no transaction going in my business?"
-                  tabIndex={2}
+                  tabIndex={1}
                 >
                   <ListItemButton>
                     <ListItemIcon>
-                      <CircleIcon sx={{ color: '#87be2a' }} />
+                      <CircleIcon
+                        sx={{
+                          color:
+                            selectedListItem ===
+                            'Do I need to pay to instapay when there is no transaction going in my business?'
+                              ? 'green'
+                              : '#87be2a',
+                        }}
+                      />
                     </ListItemIcon>
                     <ListItemText primary="Do I need to pay to instapay when there is no transaction going in my business?" />
                   </ListItemButton>
@@ -145,11 +158,19 @@ export default function MainBody() {
                   }
                   data-keyboard-focus-index="2"
                   data-item="What platforms does instapay payment gateway support?"
-                  tabIndex={3}
+                  tabIndex={2}
                 >
                   <ListItemButton>
                     <ListItemIcon>
-                      <CircleIcon sx={{ color: '#87be2a' }} />
+                      <CircleIcon
+                        sx={{
+                          color:
+                            selectedListItem ===
+                            'What platforms does instapay payment gateway support?'
+                              ? 'green'
+                              : '#87be2a',
+                        }}
+                      />
                     </ListItemIcon>
                     <ListItemText primary="What platforms does instapay payment gateway support?" />
                   </ListItemButton>
@@ -171,11 +192,19 @@ export default function MainBody() {
                   }
                   data-keyboard-focus-index="3"
                   data-item="Does instapay provide international payments support?"
-                  tabIndex={4}
+                  tabIndex={3}
                 >
                   <ListItemButton>
                     <ListItemIcon>
-                      <CircleIcon sx={{ color: '#87be2a' }} />
+                      <CircleIcon
+                        sx={{
+                          color:
+                            selectedListItem ===
+                            'Does instapay provide international payments support?'
+                              ? 'green'
+                              : '#87be2a',
+                        }}
+                      />
                     </ListItemIcon>
                     <ListItemText primary="Does instapay provide international payments support?" />
                   </ListItemButton>
@@ -188,22 +217,30 @@ export default function MainBody() {
                   disablePadding
                   selected={
                     selectedListItem ===
-                    'Is there any setup fee or annual maintainance fee to pay regularly?'
+                    'Is there any setup fee or annual maintenance fee to pay regularly?'
                   }
                   onClick={() =>
                     handleListItemClick(
-                      'Is there any setup fee or annual maintainance fee to pay regularly?'
+                      'Is there any setup fee or annual maintenance fee to pay regularly?'
                     )
                   }
                   data-keyboard-focus-index="4"
-                  data-item="Is there any setup fee or annual maintainance fee to pay regularly?"
-                  tabIndex={5}
+                  data-item="Is there any setup fee or annual maintenance fee to pay regularly?"
+                  tabIndex={4}
                 >
                   <ListItemButton>
                     <ListItemIcon>
-                      <CircleIcon sx={{ color: '#87be2a' }} />
+                      <CircleIcon
+                        sx={{
+                          color:
+                            selectedListItem ===
+                            'Is there any setup fee or annual maintenance fee to pay regularly?'
+                              ? 'green'
+                              : '#87be2a',
+                        }}
+                      />
                     </ListItemIcon>
-                    <ListItemText primary="Is there any setup fee or annual maintainance fee to pay regularly?" />
+                    <ListItemText primary="Is there any setup fee or annual maintenance fee to pay regularly?" />
                   </ListItemButton>
                   <IconButton size="large">
                     <KeyboardArrowRightIcon />

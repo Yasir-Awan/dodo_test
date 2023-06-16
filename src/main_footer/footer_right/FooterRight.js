@@ -3,10 +3,20 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import { Typography, Divider, Stack, IconButton, TextField, Button } from '@mui/material';
 import Popper from '@mui/material/Popper';
-import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
+// import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
+import SmsIcon from '@mui/icons-material/Sms';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
+import BoltIcon from '@mui/icons-material/Bolt';
+import InputLabel from '@mui/material/InputLabel';
+import InputAdornment from '@mui/material/InputAdornment';
+import FormHelperText from '@mui/material/FormHelperText';
+import FormControl from '@mui/material/FormControl';
+// import TextField from '@mui/material/TextField';
+import Visibility from '@mui/icons-material/Visibility';
+import VisibilityOff from '@mui/icons-material/VisibilityOff';
+import SentimentSatisfiedAltIcon from '@mui/icons-material/SentimentSatisfiedAlt';
 
 export default function FooterRight() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -67,42 +77,53 @@ export default function FooterRight() {
           </Typography>
         </Box>
       </Paper>
-      <Stack sx={{ paddingLeft: '8rem', paddingTop: '20rem', paddingRight: '-5rem', border: 'none' }}>
+      <Stack sx={{ paddingLeft: '11.5rem', paddingTop: '20rem', paddingRight: '-5rem', border: 'none' }}>
         <Popper id={id} open={open} anchorEl={anchorEl} placement="top">
           <Box sx={{ border: 'none', p: 0, bgcolor: 'background.paper' }}>
-          <Card sx={{ minWidth: 275 }}>
-            <CardContent>
+          <Card sx={{ minWidth: 275 ,textAlign:'center'}}>
+            <CardContent >
               <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                Word of the Day
+                Marryjane from Home Grown Pros
               </Typography>
               <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                adjective
+                How Can We Help? We Are Here For You!
               </Typography>
-              <Typography variant="body2">
-                well meaning and kindly.
-                <br />
-                {'"a benevolent smile"'}
-              </Typography>
+              <TextField
+                  label="Write a reply"
+                  id="outlined-start-adornment"
+                  sx={{ m: 1, width: '25ch' }}
+                  InputProps={{
+                    startAdornment: <InputAdornment position="start"><SentimentSatisfiedAltIcon/></InputAdornment>,
+                  }}
+                />
             </CardContent>
-            <CardActions>
-              <Button size="small">Learn More</Button>
+            <CardActions sx={{justifyContent:'center', alignContent:'center'}}>
+              {/* <Button size="small">Learn More</Button> */}
+              <Stack direction='row'>
+              <Typography variant="body2">
+                Chat<BoltIcon sx={{mb:-1,color:'yellow'}}/>by
+              </Typography>
+              <Typography variant="body2" sx={{color:'#87be2a',py:0.3,px:1}}>
+                Drift
+              </Typography>
+              </Stack>
             </CardActions>
           </Card>
           </Box>
         </Popper>
-        <Button sx={{ borderTop:'none', bgcolor: 'transparent' }} aria-describedby={id} type="button" onClick={handleClick}>
+        <Button sx={{bgcolor:'#fff',minHeight:'30px', paddingLeft:'16px', maxWidth:'2px'}} aria-describedby={id} variant='text' onClick={handleClick}>
         <IconButton
                     size="large"
                     edge="start"
-                    color="inherit"
+                    color="darkgrey"
                     aria-label="open drawer"
-                    sx={{
-                        '&:hover': {
-                          color: '#80be30', // Change the color on hover here
-                        },
-                      }}
+                    // sx={{
+                    //     '&:hover': {
+                    //       color: '#80be30', // Change the color on hover here
+                    //     },
+                    //   }}
                     >
-                        <ChatBubbleOutlineIcon/>
+                        <SmsIcon/>
                     </IconButton>
         </Button>
       </Stack>
