@@ -36,7 +36,7 @@ export default function FooterLeft() {
                 transform: 'translate(125px, 0px)',
                 }}
         >
-            <Stack sx={{mt:6,ml:8}}>
+            <Stack sx={{mt:4,ml:8}}>
             {/* <IconButton
               size="large"
               edge="start"
@@ -48,10 +48,10 @@ export default function FooterLeft() {
             </IconButton> */}
             <Box>
                 <Stack direction='row'>
-                <Typography variant="h2" sx={{fontWeight:'bold',width:'100%'}} >
+                <Typography variant="h2" sx={{fontWeight:'bold',fontSize:'4em',width:'100%'}} >
                     H
                 </Typography>
-                <Typography variant="h2" sx={{fontWeight:'bold',color:'#80be30'}} >
+                <Typography variant="h2" sx={{fontWeight:'bold',fontSize:'4em',color:'#80be30'}} >
                     GP
                 </Typography>
                 </Stack>
